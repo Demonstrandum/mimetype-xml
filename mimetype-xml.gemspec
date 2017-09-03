@@ -1,6 +1,8 @@
+require_relative 'lib/mimetype_xml'
+
 Gem::Specification.new do |s|
   s.name        = 'mimetype-xml'
-  s.version     = '0.0.0'
+  s.version     = MimetypeXML::version
   s.required_ruby_version = '>= 1.9.2'
   s.executables << 'mimetype-xml'
   s.date        = '2017-09-03'
