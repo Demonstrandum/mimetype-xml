@@ -41,7 +41,7 @@ xml_file = "elixir-file-mimetype.xml" # (opt.), not useful...
 
 [x-application-crystal]
 type = "application/x-crystal"
-pattern =  [".cr"]
+pattern =  ["*.cr"]
 comment = "Crystal File"
 icon = "mimetypes/application-x-crystal.svg"
 size = 48
