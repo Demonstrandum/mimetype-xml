@@ -1,2 +1,2 @@
 #!/usr/bin/env ruby
-puts "This command doesnt work at the moment,\nGithub repo:,\nGithub repo: https://github.com/Demonstrandum/mimetype-xml"
+puts "This command doesn't work at the moment,\nGithub Repo: `https://github.com/Demonstrandum/mimetype-xml`\n "
