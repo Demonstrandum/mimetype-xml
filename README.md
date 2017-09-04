@@ -58,7 +58,7 @@ require 'toml' # `toml` comes with this gem (`mimetype_xml`)
 
 xml = MimetypeXML::Generate.toml_file(
   :file      => './custom-mime.toml', # The location of the TOML config
-  :xml_dir   => './.xml', # Choose somewhere, make sure the dir exists
+  :xml_dir   => '/usr/share/mime/packages/', # Make sure the dir is writable for the user, run `sudo chmod 777 /usr/share/mime/packages/`
   :icon_pack => '~/.icons/YOUR_ICON_PACK' # Replace this with the install dir of your iconpack
 )
 
