@@ -2,8 +2,8 @@
 > Custom mimetype from TOML to XML
 
 ## Install
-You need Ruby and Gems (gems comes with ruby)
----
+
+- You need Ruby and Gems (gems comes with ruby)
 Install this gem with
 ```shell
 gem install mimetype-xml 
@@ -18,9 +18,8 @@ gem install mimetype-xml
 Create the TOML config (`./custom-mime.toml`):
 ```toml
 ## CUSTOM MIMETYPES TOML CONFIG FILE ##
-# Optional variables ard marked with `(opt.)` in a commant at the 
-# end of the line
-
+# Optional variables ard marked with `(opt.)` in a
+# comment at the end of the line
 
 # Add mimetype for elixir files
 [x-application-elixir]
@@ -72,6 +71,6 @@ Then run the script from your shell:
 ruby ./generate-mimetypes.rb
 ```
 
-
+---
 
 The binary file doesn't do anything at the moment.
