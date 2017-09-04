@@ -17,7 +17,7 @@ module MimetypeXML
       #end
 
       Dir[@xml_dir + '/*.xml'].each do |file|
-        %x{ xdg-mime install #{file} }
+        %x{ xdg-mime install #{file} 2>/dev/null 2>/dev/null }
       end
       
     end

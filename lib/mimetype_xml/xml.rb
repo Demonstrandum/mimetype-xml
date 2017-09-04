@@ -47,7 +47,7 @@ module MimetypeXML
       files = files_hash
 
       files.each do |file, contents|
-        bare  = contents.split("\n").map(&:rstrip).join("\n")
+        bare = contents.split("\n").map(&:strip).join("\n").squeeze("\n")
         File.open("#{@dir}/#{file}", 'w') { |f| f.write bare }
       end
        
