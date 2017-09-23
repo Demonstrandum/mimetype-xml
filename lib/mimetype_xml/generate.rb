@@ -1,11 +1,11 @@
 module MimetypeXML
   class Generate
-
+    attr_reader :toml_hash
+    alias_method :toml_hash, :parsed
+    
     def initialize toml
       @toml_hash = ParseTOML.parse toml
     end
-
-    def parser; @toml_hash; end
 
     def self.toml_file file:, xml_dir:, icon_pack:
       toml = File.read File.expand_path(file)
